@@ -1,13 +1,58 @@
 const baseDeDatosLibros = [
-  { titulo: "Física (Sexta edición)", autor: "Wilson, Buffa, Lou", estado: "Disponible", img: "https://via.placeholder.com/100x130/003366/ffffff?text=Fisica" },
-  { titulo: "GATEWAY TO THE WORLD B1", autor: "Macmillan", estado: "Prestado", img: "https://via.placeholder.com/100x130/003366/ffffff?text=Gateway+B1" },
-  { titulo: "LENGUA Y LITERATURA 2", autor: "EDELVIVES CONVERGENTE", estado: "Disponible", img: "https://via.placeholder.com/100x130/003366/ffffff?text=Lengua+2" },
-  { titulo: "Kidnapped", autor: "Robert Louis Stevenson", estado: "Disponible", img: "https://via.placeholder.com/100x130/003366/ffffff?text=Kidnapped" },
-  { titulo: "GOLD EXPERIENCE A2", autor: "Pearson", estado: "Disponible", img: "https://via.placeholder.com/100x130/003366/ffffff?text=Gold+A2" },
-  { titulo: "GOLD EXPERIENCE B1", autor: "Pearson", estado: "Prestado", img: "https://via.placeholder.com/100x130/003366/ffffff?text=Gold+B1" },
-  { titulo: "GATEWAY TO THE WORLD A1", autor: "Macmillan", estado: "Disponible", img: "https://via.placeholder.com/100x130/003366/ffffff?text=Gateway+A1" },
-  { titulo: "HISTORIA DESDE LAS PRIMERAS SOCIEDADES HASTA EL SIGLO XV", autor: "Kapelusz", estado: "Disponible", img: "https://via.placeholder.com/100x130/003366/ffffff?text=Historia+1" },
-  { titulo: "HISTORIA. DESDE LAS PRIMERAS SOCIEDADES HASTA EL FIN DE LA EDAD MEDIA", autor: "Santillana", estado: "Prestado", img: "https://via.placeholder.com/100x130/003366/ffffff?text=Historia+2" }
+  { 
+    titulo: "Física (Sexta edición)", 
+    autor: "Wilson, Buffa, Lou", 
+    estado: "Disponible", 
+    img: "https://acdn-us.mitiendanube.com/stores/001/797/785/products/fisica1-a18a0851d854b7617516662055365274-640-0.webp" 
+  },
+  { 
+    titulo: "GATEWAY TO THE WORLD B1", 
+    autor: "Macmillan", 
+    estado: "Prestado", 
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmvQZj-tRy1DunR4Ii4XF6VEe5EBoVcr2ZSUnPwK_ti9Z58EjtiwYwnrDB&s=10" 
+  },
+  { 
+    titulo: "LENGUA Y LITERATURA 2", 
+    autor: "EDELVIVES CONVERGENTE", 
+    estado: "Disponible", 
+    img: "https://http2.mlstatic.com/D_NQ_NP_894529-MLU74345608212_022024-O.webp" 
+  },
+  { 
+    titulo: "Kidnapped", 
+    autor: "Robert Louis Stevenson", 
+    estado: "Disponible", 
+    img: "https://www.blackcat-cideb.com/uploads/2017/03/122-122_46fcbf54e97b7146f78ef93f146ab326.jpg" 
+  },
+  { 
+    titulo: "GOLD EXPERIENCE A2", 
+    autor: "Pearson", 
+    estado: "Disponible", 
+    img: "https://http2.mlstatic.com/D_NQ_NP_693773-MLM46081836849_052021-O.webp" 
+  },
+  { 
+    titulo: "GOLD EXPERIENCE B1", 
+    autor: "Pearson", 
+    estado: "Prestado", 
+    img: "https://sbslibreria.vtexassets.com/arquivos/ids/5080919/QVmGDNAokv5Jbiisc1IqcFv-53A-.jpg?v=638855656250800000" 
+  },
+  { 
+    titulo: "GATEWAY TO THE WORLD A1", 
+    autor: "Macmillan", 
+    estado: "Disponible", 
+    img: "https://bcllibros.com.ar/wp-content/uploads/2022/01/Gateway-to-the-World-A1-Sb.jpg" 
+  },
+  { 
+    titulo: "HISTORIA DESDE LAS PRIMERAS SOCIEDADES HASTA EL SIGLO XV", 
+    autor: "Kapelusz", 
+    estado: "Disponible", 
+    img: "https://http2.mlstatic.com/D_NQ_NP_676619-MLA83393182527_032025-O.webp" 
+  },
+  { 
+    titulo: "HISTORIA. DESDE LAS PRIMERAS SOCIEDADES HASTA EL FIN DE LA EDAD MEDIA", 
+    autor: "Santillana", 
+    estado: "Prestado", 
+    img: "https://storage-aws-production.publica.la/santillana-educacion/issues/2018/12/OTUEUb2neHc1kxi5/1556659404_cover.jpg" 
+  }
 ];
 
 const inputBuscador = document.querySelector('.buscador input');
