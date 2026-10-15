@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Biblioteca Escolar — ITR</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Encabezado y Navegación -->
+  <header>
+    <small>INSTITUTO TÉCNICO RENAULT</small>
+    <h1>Biblioteca Escolar — ITR</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Catálogo</a>
+      <a href="#">Mis Préstamos</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Mensaje principal -->
+  <section class="banner">
+    <p><strong>Diseño orientado a la usabilidad:</strong> navegación clara, acciones visibles y acceso rápido a la información clave.</p>
+    <small>Sistema de gestión bibliotecaria con interfaz moderna e intuitiva</small>
+  </section>
+
+  <!-- Buscador -->
+  <section class="buscador">
+    <input type="text" placeholder="Buscar libros por título, autor, materia o código...">
+    <button class="btn-buscar">Buscar</button>
+  </section>
+
+  <!-- Contenedor principal -->
+  <div class="contenido">
+
+    <!-- Catálogo de Libros -->
+    <section class="seccion">
+      <h2>Catálogo Destacado</h2>
+      <div class="catalogo">
+
+        <div class="libro">
+          <img src="https://via.placeholder.com/100x130?text=Fisica" alt="Física">
+          <h3>Física (Sexta edición)</h3>
+          <p>de Wilson, Buffa, Lou</p>
+          <span class="disponible">Disponible</span>
+        </div>
+
+        <div class="libro">
+          <img src="https://via.placeholder.com/100x130?text=Gateway" alt="Gateway B1">
+          <h3>GATEWAY TO THE WORLD B1</h3>
+          <p>Macmillan</p>
+          <span class="prestado">Prestado</span>
+        </div>
+
+        <div class="libro">
+          <img src="https://via.placeholder.com/100x130?text=Lengua" alt="Lengua y Literatura">
+          <h3>LENGUA Y LITERATURA 2</h3>
+          <p>EDELVIVES CONVERGENTE</p>
+          <span class="disponible">Disponible</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Formulario de Préstamo Rápido -->
+    <section class="seccion">
+      <h2>Registro de Préstamo Rápido</h2>
+      <form id="formulario">
+        <label for="alumno">Nombre del Alumno:</label>
+        <input type="text" id="alumno" required placeholder="Ej: Santiago Gorozito">
+
+        <label for="curso">Curso / Especialidad:</label>
+        <input type="text" id="curso" required placeholder="Ej: 5° Año - Programación">
+
+        <label for="libro">Nombre del Libro:</label>
+        <input type="text" id="libro" required placeholder="Ej: Física (Sexta edición)">
+
+        <label for="fecha">Fecha de Devolución:</label>
+        <input type="date" id="fecha" required>
+
+        <button type="submit" class="btn-registrar">Registrar Préstamo</button>
+      </form>
+    </section>
+
+  </div>
+
+  <!-- Tabla de Préstamos Activos -->
+  <section class="seccion tabla-seccion">
+    <h2>Panel de Préstamos Activos</h2>
+    <table border="1" id="tabla-prestamos">
+      <thead>
+        <tr>
+          <th>Alumno</th>
+          <th>Curso</th>
+          <th>Libro Solicitado</th>
+          <th>Fecha Devolución</th>
+          <th>Estado</th>
+          <th>Acción</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Lucas Gómez</td>
+          <td>4° A</td>
+          <td>GATEWAY TO THE WORLD B1</td>
+          <td>10/10/2026</td>
+          <td>En Préstamo</td>
+          <td><button class="btn-devolver" onclick="eliminarFila(this)">Devolver Libro</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
