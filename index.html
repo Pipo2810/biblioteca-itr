@@ -7,7 +7,6 @@
 </head>
 <body>
 
-  <!-- Encabezado y Navegación -->
   <header>
     <small>INSTITUTO TÉCNICO RENAULT</small>
     <h1>Biblioteca Escolar — ITR</h1>
@@ -19,51 +18,24 @@
     </nav>
   </header>
 
-  <!-- Mensaje principal -->
   <section class="banner">
     <p><strong>Diseño orientado a la usabilidad:</strong> navegación clara, acciones visibles y acceso rápido a la información clave.</p>
     <small>Sistema de gestión bibliotecaria con interfaz moderna e intuitiva</small>
   </section>
 
-  <!-- Buscador -->
   <section class="buscador">
     <input type="text" placeholder="Buscar libros por título, autor, materia o código...">
     <button class="btn-buscar">Buscar</button>
   </section>
 
-  <!-- Contenedor principal -->
   <div class="contenido">
 
-    <!-- Catálogo de Libros -->
     <section class="seccion">
       <h2>Catálogo Destacado</h2>
-      <div class="catalogo">
-
-        <div class="libro">
-          <img src="https://via.placeholder.com/100x130?text=Fisica" alt="Física">
-          <h3>Física (Sexta edición)</h3>
-          <p>de Wilson, Buffa, Lou</p>
-          <span class="disponible">Disponible</span>
-        </div>
-
-        <div class="libro">
-          <img src="https://via.placeholder.com/100x130?text=Gateway" alt="Gateway B1">
-          <h3>GATEWAY TO THE WORLD B1</h3>
-          <p>Macmillan</p>
-          <span class="prestado">Prestado</span>
-        </div>
-
-        <div class="libro">
-          <img src="https://via.placeholder.com/100x130?text=Lengua" alt="Lengua y Literatura">
-          <h3>LENGUA Y LITERATURA 2</h3>
-          <p>EDELVIVES CONVERGENTE</p>
-          <span class="disponible">Disponible</span>
-        </div>
-
+      <div class="catalogo" id="catalogoLibros">
       </div>
     </section>
 
-    <!-- Formulario de Préstamo Rápido -->
     <section class="seccion">
       <h2>Registro de Préstamo Rápido</h2>
       <form id="formulario">
@@ -74,7 +46,7 @@
         <input type="text" id="curso" required placeholder="Ej: 5° Año - Programación">
 
         <label for="libro">Nombre del Libro:</label>
-        <input type="text" id="libro" required placeholder="Ej: Física (Sexta edición)">
+        <input type="text" id="libro" required placeholder="Ej: Kidnapped">
 
         <label for="fecha">Fecha de Devolución:</label>
         <input type="date" id="fecha" required>
@@ -85,7 +57,6 @@
 
   </div>
 
-  <!-- Tabla de Préstamos Activos -->
   <section class="seccion tabla-seccion">
     <h2>Panel de Préstamos Activos</h2>
     <table border="1" id="tabla-prestamos">
